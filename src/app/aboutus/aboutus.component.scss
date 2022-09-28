@@ -1,0 +1,40 @@
+.aboutus {
+  text-align: center;
+  width: 96%;
+  padding: 2%;
+  h1 {
+    font-size: 3em;
+  }
+  .about_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    .au_left {
+      width: 50%;
+    }
+    .au_right {
+      width: 45%;
+      text-align: left;
+      h3 {
+        font-size: 2em;
+        width: 75%;
+        & + p {
+          margin-bottom: 30px;
+        }
+      }
+      h4 {
+        font-size: 1.5em;
+        color: #0096ff;
+        width: 75%;
+      }
+      p {
+        font-size: 1em;
+        margin: 10px 0;
+        width: 75%;
+        // &:first-child {
+        // }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="services">
+  <h1>Our Services</h1>
+  <div class="ser_content">
+    <div class="card" *ngFor="let item of services; let i = index">
+      <div class="card-bg">
+        <img [src]="'assets/Images/Services/card-' + (i + 1) + '.png'" alt="" />
+      </div>
+      <div class="card-cont">
+        <h3>{{ item.head }}</h3>
+        <p>{{ item.desc }}</p>
+      </div>
+    </div>
+  </div>
+</div>

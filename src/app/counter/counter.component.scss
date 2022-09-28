@@ -1,0 +1,27 @@
+.counters {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  background-color: #f0f6fb;
+  .card {
+    text-align: center;
+    margin: 1em 4em;
+    fa-icon {
+      font-size: 2em;
+      margin: 2em auto;
+      color: #01cfc9;
+    }
+    h2 {
+      margin: 0.5em auto;
+      font-size: 2em;
+      font-weight: 500;
+    }
+    p {
+      margin: 0.5em auto;
+      font-size: 1em;
+      color: #777878;
+    }
+  }
+}

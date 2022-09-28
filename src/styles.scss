@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0%;
+  padding: 0%;
+  box-shadow: none;
+  overflow-x: hidden;
+  font-size: 16px;
+  width: auto;
+  line-height: normal;
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 0;
+    margin: 0;
+    line-height: normal !important;
+  }
+  .banner {
+    width: 96%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .banner_left {
+      width: 50%;
+      .bl_content {
+        width: 80%;
+        margin: auto;
+        p {
+          color: #0096ff;
+          font-size: 2em;
+        }
+        h1 {
+          font-size: 4em;
+        }
+        a {
+          text-decoration: none;
+          background-color: #0096ff;
+          color: #fff;
+          border-radius: 10px;
+          padding: 15px 30px;
+          outline: none;
+          font-size: 2em;
+        }
+      }
+    }
+    .banner_right {
+      width: 50%;
+      text-align: end;
+      img {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  body {
+    font-size: 12px;
+    .banner {
+      p {
+        font-size: 1.6em !important;
+      }
+      h1 {
+        font-size: 2em !important;
+      }
+      a {
+        font-size: 1.4em !important;
+      }
+    }
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
