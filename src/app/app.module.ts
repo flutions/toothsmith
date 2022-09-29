@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { ClientsComponent } from './clients/clients.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ClientsComponent } from './clients/clients.component';
     CounterComponent,
     EquipmentComponent,
     ClientsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

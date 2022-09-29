@@ -1,0 +1,45 @@
+.contact {
+  width: 100%;
+  padding: 5em 0%;
+  background-color: #12efe9;
+  display: flex;
+  justify-content: space-around;
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+    color: #666666;
+  }
+  .img_container {
+    width: 20%;
+    img {
+      width: 80%;
+    }
+  }
+  .location {
+    width: 20%;
+  }
+  .appointment {
+    width: 20%;
+    button {
+      width: 50%;
+      background-color: #2c2c2c;
+      border: none;
+      outline: none;
+      border-radius: 25px;
+      color: #fff;
+      padding: 1em;
+    }
+  }
+  .social {
+    width: 20%;
+    .icons {
+      display: flex;
+      a {
+        margin: 0 1em 0 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
