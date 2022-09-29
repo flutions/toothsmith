@@ -1,5 +1,5 @@
-<div class="equipment" id="eqp">
-  <div class="eq_parent">
+<div class="equipment" id="eqp" inViewport (inViewportAction)="view($event)">
+  <div class="eq_parent" *ngIf="visible">
     <div class="parent_content">
       <div class="parent_bg">
         <img src="assets/Images/equipment.jpg" alt="" />

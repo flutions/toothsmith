@@ -14,6 +14,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ContactComponent } from './contact/contact.component';
+import { InViewportModule } from 'ng-in-viewport';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     MatIconModule,
     FontAwesomeModule,
+    InViewportModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
