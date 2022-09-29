@@ -3,9 +3,12 @@ body {
   padding: 0%;
   box-shadow: none;
   overflow-x: hidden;
-  font-size: 16px;
+  font-size: 20px;
   width: auto;
   line-height: normal;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   p,
   a,
   h1,
@@ -57,28 +60,212 @@ body {
     }
   }
 }
-@media only screen and (max-width: 1300px) {
+// @media only screen and (max-width: 1300px) {
+//   body {
+//     font-size: 12px;
+//     .banner {
+//       p {
+//         font-size: 1.6em !important;
+//       }
+//       h1 {
+//         font-size: 2em !important;
+//       }
+//       a {
+//         font-size: 1.4em !important;
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 1440px) {
   body {
-    font-size: 12px;
-    .banner {
-      p {
-        font-size: 1.6em !important;
-      }
+    font-size: 16px !important;
+    .banner_left {
       h1 {
         font-size: 2em !important;
       }
       a {
-        font-size: 1.4em !important;
+        font-size: 1em !important;
+      }
+      .blc_right {
+        font-size: 0.8em !important;
+      }
+    }
+    .equipment {
+      .parent_content {
+        width: 25% !important;
+      }
+    }
+    .contact {
+      h2 {
+        font-size: 1.5em !important;
+      }
+      p {
+        font-size: 1em !important;
+      }
+      button {
+        width: 80% !important;
       }
     }
   }
 }
 
-html,
-body {
-  height: 100%;
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px !important;
+    .banner_left {
+      h1 {
+        font-size: 2em !important;
+      }
+      a {
+        font-size: 1em !important;
+      }
+      .blc_right {
+        font-size: 0.8em !important;
+      }
+      .bl_contact {
+        margin: 25px auto !important;
+      }
+    }
+    .banner_cards {
+      .b_card {
+        padding: 3em 1em !important;
+        img {
+          width: 3em !important;
+        }
+        p {
+          font-size: 1em !important;
+        }
+      }
+    }
+    .services {
+      .ser_content {
+        justify-content: space-between;
+        .card {
+          width: 45% !important;
+          margin-right: unset !important;
+        }
+      }
+    }
+    .equipment {
+      .parent_content {
+        height: 15em !important;
+        .parent_bg {
+          img {
+            margin-left: -30% !important;
+          }
+        }
+      }
+    }
+    .contact {
+      button {
+        width: 100% !important;
+        font-size: 0.8em !important;
+      }
+    }
+  }
 }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+@media (max-width: 1024px) {
+  .bl_contact {
+    .blc {
+      width: 50% !important;
+    }
+  }
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 12px !important;
+    .logo {
+      width: 50% !important;
+    }
+    .banner {
+      flex-direction: column-reverse;
+      .banner_left {
+        width: 100% !important;
+        .bl_content {
+          text-align: center !important;
+        }
+        .bl_contact {
+          .blc {
+            .blc_right {
+              font-size: 1em !important;
+            }
+          }
+        }
+      }
+    }
+    .aboutus {
+      .about_content {
+        flex-direction: column;
+        .au_left {
+          width: 100% !important;
+        }
+        .au_right {
+          width: 90% !important;
+          h3,
+          h4,
+          p {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+    .banner_cards {
+      .b_card {
+        width: 50% !important;
+      }
+    }
+    .services {
+      .ser_content {
+        justify-content: center !important;
+        .card {
+          width: 75% !important;
+        }
+      }
+    }
+    .equipment {
+      h1 {
+        font-size: 1.2em !important;
+      }
+      h2 {
+        font-size: 1em;
+      }
+      .parent_content {
+        height: 10em !important;
+        width: 30% !important;
+      }
+    }
+    .clients {
+      .client_container {
+        flex-direction: column !important;
+        .client {
+          flex-direction: row !important;
+          width: 100% !important;
+          justify-content: space-between !important;
+          align-items: center !important;
+          .user {
+            width: 20% !important;
+          }
+          .cont {
+            width: 50% !important;
+            &:after {
+              left: -30px !important;
+              bottom: unset !important;
+              top: calc(50% - 20px);
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+    .contact {
+      flex-wrap: wrap !important;
+      .img_container,
+      .location,
+      .appointment,
+      .social {
+        width: 45% !important;
+      }
+    }
+  }
 }

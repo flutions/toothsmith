@@ -4,6 +4,19 @@
   padding: 2%;
   h1 {
     font-size: 3em;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+    &::after {
+      content: "";
+      bottom: -10px;
+      left: 45%;
+      position: absolute;
+      width: 10%;
+      height: 10%;
+      background-color: #01cfc9;
+      border-radius: 25px;
+    }
   }
   .about_content {
     display: flex;
@@ -12,6 +25,9 @@
     margin-top: 3em;
     .au_left {
       width: 50%;
+      img {
+        width: 100%;
+      }
     }
     .au_right {
       width: 45%;
